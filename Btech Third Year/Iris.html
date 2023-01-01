@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1> IRS</h1>
+    <h2>XML Retrieval</h2>
+    <h3>What is XML?</h3>
+    • eXtensible Markup Language<br>
+    • A framework for defining markup languages<br>
+    • No fixed collection of markup tags<br>
+    • Each XML language targeted for application<br>
+    • All XML languages share features<br>
+    • Enables building of generic tools<br>
+    • XML - the eXtensible Markup Language has recently
+    emerged as a new standard for data representation
+    and exchange on the Internet.<br>
+    • An XML document is an ordered, labeled tree.
+    Each node of the tree is an element<br>
+    • XML element and is written with an opening
+    and closing tag. An element can have one or
+    more XML attributes.<br>
+   <h1> XML</h1>
+    • The standard for accessing and processing
+    XML documents is the XML Document Object
+    Model or DOM.<br>
+    • The DOM represents elements, attributes and
+    text within elements as nodes in a tree.<br>
+    • Example:
+   <h2> XML Document</h2>
+    • play<br>
+    • author Shakespeare<br>
+    • Macbeth<br>
+    • act number="I"<br>
+    • scene number="vii"<br>
+    •Macbeth’s castle<br>
+    • verseWill I with wine and wassail ...<br>
+    • scene<br>
+    • act<br>
+    • play<br>
+    <h2>XML Document</h2
+    <img src="../Image/document.png" alt="" width="500">
+    <h3>XML document as DOM object</h3>
+    <img src="../Image/dom object.png" alt=""width="500">
+    <h2>Basic Structure</h2>
+    • An XML document is an ordered, labeled tree<br>
+    • character data leaf nodes contain the actual
+    data (text strings)<br>
+    • element nodes, are each labeled with
+    – a name (often called the element type), and
+    – a set of attributes, each consisting of a name and
+    a value.<br>
+    – can have child nodes<br>
+    <h2>XML properties</h2>
+    <img src="../Image/properties.png" alt="" width="500">
+   <h3> XML Example</h3>
+   <img src="../Image/xml example.png" alt="" width="500">
+   
+    <chapter id="cmds"><br>
+    <chaptitle>FileCab</chaptitle><br>
+    <para>This chapter describes<br>
+    the commands that manage
+    the<br>
+    <tm>FileCab</tm>inet
+    application.<br>
+    </para><br>
+    </chapter><br>
+    
+    <img src="../Image/design structure .png" alt="" width="500">
+    <h2>XML applications</h2>
+    • XML application refers to an application of
+    XML to a specific domain?<br>
+    XML applications cont..<br>
+    • CML- Chemists can create and publish
+    molecule specifications for easy interchange.<br>
+    • MML- To publish equations and all kind of
+    mathematical terms<br>
+    • CDF- introduce the idea of webcasting<br>
+    • -send documents to the user rather than
+    waiting for the user to come and get them
+    XML applications cont..<br>
+    • SMIL- has become a core part part of the
+    RealNetworks streaming software( Apple
+    quicktime)<br>
+    SMIL lets you create fast cuts and true
+    multimedia presentations.<br>
+    SVG- Scalable Vector Graphics-implementation
+    in Adobe products, Corel draw)—One can
+    draw 2 dimensional graphics using markup
+    XML applications cont..<br>
+    • XUL- XML based user Interface Language—
+    Enable you to describe what user interface
+    elements you want those browsers to display.<br>
+    • XBRL- Extensible Business Reporting languageTo describe financial statements.<br>
+    • RDF- resource description framework-XML
+    application that specializes in meta-data. One use
+    RDF to specify info. about other resources.<br>
+    • One can create vocabulary that describe resources
+   <h2> Uses of XML</h2>
+    • XML has a variety of uses, including:<br>
+    • Web publishing: XML allows you to create
+    interactive pages, allows the customer to
+    customize those pages, and makes creating ecommerce applications more intuitive. With
+    XML, you store the data once and then render
+    that content for different viewers or devices
+    based on style sheet processing using an
+    XSL/XSLT processor.<br>
+    <h2>Uses of XML</h2>
+    • Web searching and automating Web tasks: XML
+    defines the type of information contained in a
+    document, making it easier to return useful
+    results when searching the Web:<br>
+    – For example, using HTML to search for books
+    authored by Tom Wolf is likely to return instances of
+    the term 'wolf' outside of the context of author. Using
+    XML restricts the search to the correct context (say,
+    the information contained in the <author> tag) and
+    returns only the required type of information. Using
+    XML, Web agents and robots (programs that
+    automate Web searches or other tasks) will be more
+    efficient and produce more useful results.<br>
+    
+    • General applications: XML provides a standard
+    method to access information, making it easier
+    for applications and devices of all kinds to use,
+    store, transmit, and display data.<br>
+    • e-business applications: XML implementations
+    make electronic data interchange (EDI) more
+    accessible for information interchange, businessto-business transactions, and business-toconsumer transactions.<br>
+   
+    • Metadata applications: XML makes is easier to
+    express metadata (Unified Modeling Language
+    design models or user interface properties, for
+    example) in a portable, reusable format.<br>
+    • Pervasive computing: XML provides portable and
+    structured information types for display on
+    pervasive (wireless) computing devices such as
+    PDAs, cellular phones, and others.<br>
+    – For example, WML (Wireless Markup Language) and
+    VoiceXML are currently evolving standards for
+    describing visual and speech-driven wireless device
+    interfaces.<br>
+    <h3>Uses of XML</h3>
+    • Create other Languges
+    Many languages are created using XML.<br>
+    Examples are WML, MathML etc.<br>
+    • Use in Databases<br>
+    Modern database such as Oracle and MSSQL
+    server is providing the XML support in their
+    databases.<br>
+    <h2>XML-related technologies.</h2>
+    • DTD (Document Type Definition) is used to define the
+    legal elements in an XML document.<br>
+    • well-formed XML: proper nesting of elements<br>
+    • (e.g. <a><b></a></b> is forbidden<br>
+    • valid XML: document is well-formed and conforms to
+    document type definition<br>
+   <h2> Declaration of DTD</h2>
+    • in the document header:<br>
+    • !DOCTYPE name PUBLIC publicid systemid<br>
+    • !DOCTYPE name SYSTEM filename<br>
+    
+    
+    <h2>XML related technologies</h2>
+    • XML Document Object Model (XML DOM): standard for accessing and processing
+    XML documents<br>
+    • The DOM represents elements, attributes and text within elements as nodes in a
+    tree.<br>
+    • With a DOM API, we can process an XML document by starting at the root element
+    and then descending down the tree from parents to children.<br>
+    • XML DOM (XML Document Object Model) defines a standard way for accessing
+    and manipulating XML documents.<br>
+   <h2> XML related technologies<h2>
+    • XSD (XML Schema) is an XML-based alternative to DTDs.
+    XML Schema<br>
+    <h3>XML related technologies<h3>
+    • XHTML (Extensible HTML) is a stricter and cleaner version of HTML.<br>
+    • XSL (Extensible Style Sheet Language) - XSL consists of three parts: XSLT -
+    a language for transforming XML documents, XPath - a language for
+    navigating in XML documents, and XSL-FO - a language for formatting XML
+    documents.<br>
+    • XSLT (XSL Transformations) is used to transform XML documents into
+    other XML formats, like XHTML.<br>
+    XML-related technologies.<br>
+    • XPath is a language for navigating in XML documents.<br>
+    • XSL-FO (Extensible Style Sheet Language Formatting
+    Objects) is an XML based markup language describing the
+    formatting of XML data for output to screen, paper or other
+    media.<br>
+    • XLink (XML Linking Language) is a language for creating
+    hyperlinks in XML documents.<br>
+    • XPointer (XML Pointer Language) allows the XLink
+    hyperlinks to point to more specific parts in the XML
+    document.<br
+    • XForms (XML Forms) uses XML to define form data.<br>
+    • XQuery (XML Query Language) is designed to query XML
+    data.<br>
+    <h3>XML-related technologies.</h3><br>
+    • SOAP (Simple Object Access Protocol) is an XML-based protocol to let
+    applications exchange information over HTTP.<br>
+    • WSDL (Web Services Description Language) is an XML-based language for
+    describing web services.<br>
+    • RDF (Resource Description Framework) is an XML-based language for
+    describing web resources.<br>
+    • RSS (Really Simple Syndication) is a format for syndicating news and the
+    content of news-like sites.<br>
+    • WAP (Wireless Application Protocol) was designed to show internet
+    contents on wireless clients, like mobile phones.<br>
+    • SMIL (Synchronized Multimedia Integration Language) is a language for
+    describing audiovisual presentations.<br>
+    • SVG (Scalable Vector Graphics) defines graphics in XML format.<br>
+    • XML parser is used to read, update, create and manipulate an XML
+    document.<br>
+    
+    <h2>XPath Locator Languages</h2>
+    
+    
+    
+    
+    <h3>IR and relational databases</h3>
+    IR systems are often contrasted with relational
+    databases (RDB).<br>
+    • Traditionally, IR systems retrieve information
+    from unstructured text (“raw” text without
+    markup).<br>
+    • RDB systems are used for querying relational
+    data: sets of records that have values for
+    predefined attributes such as employee
+    number, title and salary.<br>
+<h2>IR and relational databases</h2>
+   <h3> Why Use XML?</h3>
+    • Represent semi-structured data<br>
+    – data that are structured, but don’t fit relational
+    model<br>
+    • XML is more flexible than DBs<br>
+    • XML is more structured than simple IR<br>
+    • You get a massive infrastructure for free
+    Outline<br>
+    ❶Vector space model for XML IR<br>
+    
+   <h2> Main idea: lexicalized subtrees</h2>
+    <h4>Aim:</h4> to have each dimension of the vector space encode a word together with its
+    position within the XML tree.<br>
+    <h3>How: Map XML documents to lexicalized subtrees.</h3>
+    Book<br>
+    Title Author<br>
+    Microsoft Bill Gates<br>
+    Author<br>
+    Bill Gates<br>
+    Microsoft Bill Gates<br>
+    Title<br>
+    Microsoft<br>
+    Author<br>
+    Gates<br>
+    Author<br>
+    Bill<br>
+    Book<br>
+    Title<br>
+    Microsoft<br>
+    . . .<br>
+    Book<br>
+    
+    <h2>Main idea: lexicalized subtrees</h2>
+    ❶ Take each text node (leaf) and break it into multiple nodes, one for each
+    word. E.g. split Bill Gates into Bill and Gates<br>
+    ❷ Define the dimensions of the vector space to be lexicalized subtrees of
+    <h2>documents –</h2> subtrees that contain at least one vocabulary term.<br>
+    Book<br>
+    Title Author<br>
+    Microsoft Bill Gates<br>
+    Author<br>
+    Bill Gates<br>
+    Microsoft Bill <br>
+    Title<br>
+    Microsoft<br>
+    Author<br>
+    Gates<br>
+    Author<br>
+    Bill<br>
+    Book<br>
+    Title<br>
+    Microsoft<br>
+    . . .<br>
+    Book<br>
+    
+    <h2>Lexicalized subtrees</h2>
+    We can now represent queries and documents as vectors in this space of lexicalized
+    subtrees and compute matches between them,<br>
+    e.g. using the vector space formalism.<br>
+    Vector space formalism in unstructured VS. structured IR
+    The main difference is that the dimensions of vector space in
+    unstructured retrieval are vocabulary terms whereas they are
+    lexicalized subtrees in XML retrieval.<br>
+    
+    <h3>Structural term</h3>
+    There is a tradeoff between the dimensionality of the space and the accuracy of query
+    results.<br>
+     If we restrict dimensions to vocabulary terms, then we have a standard vector space
+    retrieval system that will retrieve many documents that do not match the structure of
+    the query (e.g., Gates in the title as opposed to the author element).<br>
+     If we create a separate dimension for each lexicalized subtree occurring in the
+    collection, the dimensionality of the space becomes too large.<br>
+    Compromise: index all paths that end in a single vocabulary term, in other words all XMLcontext term pairs. We call such an XML-context term pair a structural term and denote it
+    by <c, t>: a pair of XML-context c and vocabulary term t.<br>
+    <br>
+    Context resemblance<br>
+    A simple measure of the similarity of a path cq
+    in a query and a path cq<br>
+    in a document is<br>
+    <h4>the following context resemblance function CR:</h4>
+    cq
+    and cd
+     are the number of nodes in the query path and document path, resp.<br>
+    cq matches cd<br>
+    iff we can transform cq
+    into cd by inserting additional nodes.<br>
+    
+    Context resemblance example<br>
+    CR(cq
+    , cd
+    ) = 3/4 = 0.75. <br>The value of CR(cq
+    , cd
+    ) is 1.0 if q and d are identical.<br>
+    
+    Context resemblance example<br>
+    CR(cq
+    , cd
+    ) = ? CR(cq
+    , cd
+    ) = 3/5 = 0.6.  <br>
+    
+</body>
+</html>

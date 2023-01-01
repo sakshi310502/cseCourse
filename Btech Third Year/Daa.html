@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Design Analysis and Algorithm</h1>
+   <h2> DAA Algorithm</h2>
+The word algorithm has been derived from the Persian author's name, Abu Ja 'far Mohammed ibn Musa al Khowarizmi (c. 825 A.D.), who has written a textbook on Mathematics. The word is taken based on providing a special significance in computer science. The algorithm is understood as a method that can be utilized by the computer as when required to provide solutions to a particular problem.
+<br>
+An algorithm can be defined as a finite set of steps, which has to be followed while carrying out a particular problem. It is nothing but a process of executing actions step by step.
+<br>
+An algorithm is a distinct computational procedure that takes input as a set of values and results in the output as a set of values by solving the problem. More precisely, an algorithm is correct, if, for each input instance, it gets the correct output and gets terminated.
+<br>
+An algorithm unravels the computational problems to output the desired result. An algorithm can be described by incorporating a natural language such as English, Computer language, or a hardware language.
+<br>
+
+<h2>Characteristics of Algorithms</h2>
+Input: It should externally supply zero or more quantities.<br>
+Output: It results in at least one quantity.<br>
+Definiteness: Each instruction should be clear and ambiguous.<br>
+Finiteness: An algorithm should terminate after executing a finite number of steps.<br>
+Effectiveness: Every instruction should be fundamental to be carried out, in principle, by a person using only pen and paper.<br>
+Feasible: It must be feasible enough to produce each instruction.<br>
+Flexibility: It must be flexible enough to carry out desired changes with no efforts.<br>
+Efficient: The term efficiency is measured in terms of time and space required by an algorithm to implement. Thus, an algorithm must ensure that it takes little time and less memory space meeting the acceptable limit of development time.
+<br>
+Independent: An algorithm must be language independent, which means that it should mainly focus on the input and the procedure required to derive the output instead of depending upon the language.
+<br>
+<h2>Advantages of an Algorithm</h2>
+Effective Communication: Since it is written in a natural language like English, it becomes easy to understand the step-by-step delineation of a solution to any particular problem.
+<br>Easy Debugging: A well-designed algorithm facilitates easy debugging to detect the logical errors that occurred inside the program.<br>
+Easy and Efficient Coding: An algorithm is nothing but a blueprint of a program that helps develop a program.<br>
+Independent of Programming Language: Since it is a language-independent, it can be easily coded by incorporating any high-level language.<br>
+<h2>Disadvantages of an Algorithm</h2>
+Developing algorithms for complex problems would be time-consuming and difficult to understand.<br>
+It is a challenging task to understand complex logic through algorithms.<br>
+<h2>Pseudocode</h2>
+Pseudocode refers to an informal high-level description of the operating principle of a computer program or other algorithm. It uses structural conventions of a standard programming language intended for human reading rather than the machine reading.
+<br>
+<h2>Advantages of Pseudocode</h2>
+Since it is similar to a programming language, it can be quickly transformed into the actual programming language than a flowchart.<br>
+The layman can easily understand it.<br>
+Easily modifiable as compared to the flowcharts.<br>
+Its implementation is beneficial for structured, designed elements.<br>
+It can easily detect an error before transforming it into a code.<br>
+<h2>Disadvantages of Pseudocode</h2>
+Since it does not incorporate any standardized style or format, it can vary from one company to another.<br>
+Error possibility is higher while transforming into a code.<br>
+It may require a tool for extracting out the Pseudocode and facilitate drawing flowcharts.<br>
+It does not depict the design.<br>
+<h2>Difference between Algorithm and the Pseudocode</h2>
+An algorithm is simply a problem-solving process, which is used not only in computer science to write a program but also in our day to day life. It is nothing but a series of instructions to solve a problem or get to the problem's solution. It not only helps in simplifying the problem but also to have a better understanding of it.
+<br>
+However, Pseudocode is a way of writing an algorithm. Programmers can use informal, simple language to write pseudocode without following any strict syntax. It encompasses semi-mathematical statements.
+<br>
+
+<h2>Pseudo Approach:</h2>
+
+Initialize a variable called as Count to zero, absent to zero, total to 60<br>
+FOR EACH Student PRESENT DO the following:<br>
+Increase the Count by One<br>
+Then Subtract Count from total and store the result in absent<br>
+Display the number of absent students<br>
+Algorithmic Approach:<br>
+
+Count <- 0, absent <- 0, total <- 60<br>
+REPEAT till all students counted<br>
+Count <- Count + 1<br>
+absent <- total - Count<br>
+Print "Number absent is:" , absent<br>
+<h2>Asymptotic Analysis of algorithms (Growth of function)</h2>
+Resources for an algorithm are usually expressed as a function regarding input. Often this function is messy and complicated to work. To study Function growth efficiently, we reduce the function down to the important part.
+<br>
+  Let f (n) = an2+bn+c<br>
+In this function, the n2 term dominates the function that is when n gets sufficiently large.
+<br>
+Dominate terms are what we are interested in reducing a function, in this; we ignore all constants and coefficient and look at the highest order term concerning n.
+<br>
+<h2>Asymptotic notation:</h2>
+The word Asymptotic means approaching a value or curve arbitrarily closely (i.e., as some sort of limit is taken).
+<br>
+<h2>Asymptotic analysis</h2>
+It is a technique of representing limiting behavior. The methodology has the applications across science. It can be used to analyze the performance of an algorithm for some large data set.
+<br>
+1. In computer science in the analysis of algorithms, considering the performance of algorithms when applied to very large input datasets
+<br>
+The simplest example is a function ƒ (n) = n2+3n, the term 3n becomes insignificant compared to n2 when n is very large. The function "ƒ (n) is said to be asymptotically equivalent to n2 as n → ∞", and here is written symbolically as ƒ (n) ~ n2.
+<br>
+Asymptotic notations are used to write fastest and slowest possible running time for an algorithm. These are also referred to as 'best case' and 'worst case' scenarios respectively.
+<br>
+"In asymptotic notations, we derive the complexity concerning the size of the input. (Example in terms of n)"
+<br>
+"These notations are important because without expanding the cost of running the algorithm, we can estimate the complexity of the algorithms."
+<br>
+<h2>Why is Asymptotic Notation Important?</h2>
+1. They give simple characteristics of an algorithm's efficiency.<br>
+
+2. They allow the comparisons of the performances of various algorithms.<br>
+
+
+<h2>Asymptotic Notations:</h2>
+Asymptotic Notation is a way of comparing function that ignores constant factors and small input sizes. Three notations are used to calculate the running time complexity of an algorithm:
+<br>
+<h3>1. Big-oh notation:</h3> Big-oh is the formal method of expressing the upper bound of an algorithm's running time. It is the measure of the longest amount of time. The function f (n) = O (g (n)) [read as "f of n is big-oh of g of n"] if and only if exist positive constant c and such that
+<br>
+f (n) ⩽ k.g (n)f(n)⩽k.g(n) for n>n0n>n0 in all case   <br>
+Hence, function g (n) is an upper bound for function f (n), as g (n) grows faster than f (n)
+<br>
+<img src="../Image/upperbound.png" alt="">
+<h4>For Example:</h4>
+1. 3n+2=O(n) as 3n+2≤4n for all n≥2  <br>
+2. 3n+3=O(n) as 3n+3≤4n for all n≥3  <br>
+Hence, the complexity of f(n) can be represented as O (g (n))<br>
+
+<h3>2. Omega () Notation:</h3>
+ The function f (n) = Ω (g (n)) [read as "f of n is omega of g of n"] if and only if there exists positive constant c and n0 such that
+
+F (n) ≥ k* g (n) for all n, n≥ n0<br>
+<img src="../Image/LB.png" alt="">
+
+<h4>For Example:</h4>
+  f (n) =8n2+2n-3≥8n2-3<br>
+        =7n2+(n2-3)≥7n2 (g(n))<br>
+Thus, k1=7<br>
+Hence, the complexity of f (n) can be represented as Ω (g (n))<br>
+
+<h3>3. Theta (θ): </h3>The function f (n) = θ (g (n)) [read as "f is the theta of g of n"] if and only if there exists positive constant k1, k2 and k0 such that<br>
+
+  k1 * g (n) ≤ f(n)≤ k2 g(n)for all n, n≥ n0<br>
+  <img src="../Image/TB.png" alt="">
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microprocessor</title>
+</head>
+<body>
+    <h1>Microprocessor</h1>
+    <h3>What is Microprocessor?</h3>
+    <p>A <strong>microprocessor</strong> is a multipurpose, programmable, clock-driven, register-based electronic device that reads binary instructions from a storage device called memory, accepts binary data as input and processes data according to those instructions and provide results as output.</p>
+    <h2>Basic Knowledge of 8085 Microprocessor:</h2>
+    <h3>Pin diagram of 8085 Microprocessor:</h3>
+    <p>Pin diagram of 8085 microprocessor is as given below:&nbsp;</p>
+    <p>&nbsp;</p>
+    <div id="GFG_AD_gfg_mobile_336x280"></div>
+    <p><img src="https://media.geeksforgeeks.org/wp-content/uploads/8085-PIN-1.png"></p>
+    <p><strong>1. Address Bus and Data Bus:</strong>&nbsp;<br>The address bus is a group of sixteen lines i.e A0-A15. The address bus is unidirectional, i.e., bits flow in one direction from the microprocessor unit to the peripheral devices and uses the high order address bus.&nbsp;</p>
+    <p><strong>2. Control and Status Signals:</strong>&nbsp;<br>&nbsp;</p>
+    <ul><li><strong>ALE –</strong> It is an Address Latch Enable signal. It goes high during first T state of a machine cycle and enables the lower 8-bits of the address, if its value is 1 otherwise data bus is activated.&nbsp;<p>&nbsp;</p></li><li><strong>IO/M’ –</strong> It is a status signal which determines whether the address is for input-output or memory. When it is high(1) the address on the address bus is for input-output devices. When it is low(0) the address on the address bus is for the memory.&nbsp;<p>&nbsp;</p></li><li><strong>SO, S1 –</strong> These are status signals. They distinguish the various types of operations such as halt, reading, instruction fetching or writing.&nbsp;<p>&nbsp;</p></li></ul>
+    <figure class="table"><table><thead><tr><th>IO/M’</th><th>S1</th><th>S0</th><th>Data Bus Status</th></tr></thead><tbody><tr><td>0</td><td>1</td><td>1</td><td>Opcode fetch</td></tr><tr><td>0</td><td>1</td><td>0</td><td>Memory read</td></tr><tr><td>0</td><td>0</td><td>1</td><td>Memory write</td></tr><tr><td>1</td><td>1</td><td>0</td><td>I/O read</td></tr><tr><td>1</td><td>0</td><td>1</td><td>I/O write</td></tr><tr><td>1</td><td>1</td><td>1</td><td>Interrupt acknowledge</td></tr><tr><td>0</td><td>0</td><td>0</td><td>Halt</td></tr></tbody></table></figure>
+    <ul><li>&nbsp;</li><li><strong>RD’ –</strong> It is a signal to control READ operation. When it is low the selected memory or input-output device is read.&nbsp;<p>&nbsp;</p></li><li><strong>WR’ –</strong> It is a signal to control WRITE operation. When it goes low the data on the data bus is written into the selected memory or I/O location.&nbsp;<p>&nbsp;</p></li><li><strong>READY –</strong> It senses whether a peripheral is ready to transfer data or not. If READY is high(1) the peripheral is ready. If it is low(0) the microprocessor waits till it goes high. It is useful for interfacing low speed devices.&nbsp;<br>&nbsp;</li></ul>
+    <p><strong>3. Power Supply and Clock Frequency:</strong>&nbsp;</p>
+    <p>&nbsp;</p>
+    <ul><li><strong>Vcc – </strong> +5v power supply&nbsp;<p>&nbsp;</p></li><li><strong>Vss –</strong> Ground Reference&nbsp;<p>&nbsp;</p></li><li><strong>XI, X2 –</strong> A crystal is connected at these two pins. The frequency is internally divided by two, therefore, to operate a system at 3MHZ the crystal should have frequency of 6MHZ.&nbsp;<p>&nbsp;</p></li><li><strong>CLK (OUT) –</strong> This signal can be used as the system clock for other devices.&nbsp;<br>&nbsp;</li></ul>
+    <p><strong>4. Interrupts and Peripheral Initiated Signals:</strong>&nbsp;<br>The 8085 has five interrupt signals that can be used to interrupt a program execution.&nbsp;</p>
+    <p>(i) INTR&nbsp;<br>(ii) RST 7.5&nbsp;<br>(iii) RST 6.5&nbsp;<br>(iv) RST 5.5&nbsp;<br>(v) TRAP&nbsp;</p>
+    <p>The microprocessor acknowledges Interrupt Request by INTA’ signal. In addition to Interrupts, there are three externally initiated signals namely RESET, HOLD and READY. To respond to HOLD request, it has one signal called HLDA.&nbsp;</p>
+    <p>&nbsp;</p>
+    <ul><li><strong>INTR –</strong> It is an interrupt request signal.&nbsp;<p>&nbsp;</p></li><li><strong>INTA’ –</strong> It is an interrupt acknowledgement sent by the microprocessor after INTR is received.&nbsp;<br>&nbsp;</li></ul>
+    <p><strong>5. Reset Signals:</strong>&nbsp;</p>
+    <p>&nbsp;</p>
+    <ul><li><strong>RESET IN’ –</strong> When the signal on this pin is low(0), the program-counter is set to zero, the buses are tristated and the microprocessor unit is reset.&nbsp;<p>&nbsp;</p></li><li><strong>RESET OUT –</strong> This signal indicates that the MPU is being reset. The signal can be used to reset other devices.&nbsp;<br>&nbsp;</li></ul>
+    <p><strong>6. DMA Signals:</strong>&nbsp;</p>
+    <p>&nbsp;</p>
+    <ul><li><strong>HOLD –</strong> It indicates that another device is requesting the use of the address and data bus. Having received HOLD request the microprocessor relinquishes the use of the buses as soon as the current machine cycle is completed. Internal processing may continue. After the removal of the HOLD signal the processor regains the bus.&nbsp;<p>&nbsp;</p></li><li><strong>HLDA –</strong> It is a signal which indicates that the hold request has been received after the removal of a HOLD request, the HLDA goes low.&nbsp;<br>&nbsp;</li></ul>
+    <p><strong>7. Serial I/O Ports:</strong>&nbsp;<br>Serial transmission in 8085 is implemented by the two signals,&nbsp;</p>
+    <ul><li><strong>SID and SOD –</strong> SID is a data line for serial input where as SOD is a data line for serial output.&nbsp;<br>&nbsp;</li></ul>
+</body>
+</html>

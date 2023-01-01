@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Distributed Systems</h1>
+    <h2>Introduction to Distributed Systems - Definitions</h2> 
+    A distributed system is a collection of independent computers that appear to the users of the system as a single coherent system.<br>
+    A distributed system is a collection of independent computers that appears to its users as a single coherent system.<b>
+    ... or ...<br>
+    as a single system.<br>
+    
+    
+    A distributed system is a collection of autonomous computers linked by a computer network that appear to the users of the system as a single computer.
+    <br>
+    
+    A distributed system consists of a collection of autonomous computers, connected through a network and distribution middleware, which enables
+    computers to coordinate their activities and to share the resources of the system, so that users perceive the system as a single, integrated computing facility.
+    <br>
+
+    <h2>System architecture:</h2> 
+    the machines are autonomous; this means they are computers which, in principle, could work independently.<br>
+    
+    
+    
+    The user’s perception: the distributed system is perceived as a single system solving a certain problem (even though, in reality, we have several computers placed in different locations).
+    <br>
+    The distributed system has following characteristics: •They do not have share memory or clock<br>
+    •The computers communicate between themselves by the exchanging messages over a communication network<br>
+    Each computer has its own memory and operating system<br>
+    
+    <h2>Advantages of Distributed Systems.</h2>
+    
+    <h4>•Performance:</h4>
+    very often a collection of processors can provide higher performance (and better price/performance ratio) than a Centralized computer.
+    <br>
+    <h4>•Distribution:</h4>
+    many applications involve, by their nature, spatially separated machines banking, Commercial, automotive system).<br>
+    <h4>•Reliability (fault tolerance)</h4>
+    if some of the machines crash, the system can survive. •Incremental growth:<br>
+    as requirements on processing power grow, new machines can be added incrementally. 
+    <h4>•Sharing of data/resources:</h4>
+    shared data is essential to many applications (banking, computer supported •Cooperative work, reservation systems)
+    other resources can be also shared (e.g. expensive printers).<br>
+     <h4>•Communication:</h4>
+    facilitates human-to-human communication.<br>
+    
+   <h2> Disadvantages of Distributed Systems</h2>
+    
+    Difficulties of developing distributed software:<br>
+    
+    
+    how should operating systems, programming languages and applications look like? Networking problems
+    
+    
+    several problems are created by the network infrastructure, which have to be dealt with: loss of messages, overloading.<br>
+    
+    
+    Security problems
+    
+    
+    sharing generates the problem of data security.<br>
+    
+    <h2>Some Prominent Differences</h2>
+    
+    Single Computer V/s DS<br>
+    
+    Client Server Architecture V/s DS<br>
+    
+    Parallel Computing V/s DS<br>
+    
+     
+    <h2>Centralized & Distributed System Characteristics</h2>
+    
+    
+    
+    One component with non-autonomous Parts Component shared by users all the time
+    All resources accessible Software runs in a single process Single Point of control
+    Single Point of failure<br>
+    
+    
+    Multiple autonomous components Components are not shared by all users Resources may not be accessible
+    Software runs in concurrent processes on different processors Multiple Points of control
+    Multiple Points of failure<br>
+    
+    <h4>Centralized & Distributed System Common Characteristics</h4>
+    
+    <h4>What are we trying to achieve when we construct a distributed system?</h4>
+    Certain common characteristics can be used to assess distributed systems<br>
+    • Resource Sharing<br> • Openness<br>
+    • Concurrency <br>• Scalability<br>
+    • Fault Tolerance <br>• Transparency<br>
+    
+  
+    <h4>Resource Sharing</h4>
+    
+    
+    Ability to use any hardware, software or data anywhere in the system.<br>
+    
+    
+    Resource manager controls access, provides naming scheme and controls concurrency.<br>
+    
+    
+    Resource sharing model (e.g. client/server or object-based) describing how<br>
+    • resources are provided, • they are used and<br>
+    • provider and user interact with each other.<br>
+    
+   <h4> Openness</h4>
+    Openness is concerned with extensions and improvements of distributed systems.<br>
+    Detailed interfaces of components need to be published.<br>
+    New components have to be integrated with existing components.<br>
+    Differences in data representation of interface types on different processors (of different vendors) have to be resolved.<br>
+    
+   <h4> Concurrency</h4>
+    
+    Components in distributed systems are executed in concurrent processes.<br>
+    
+    
+    Components access and update shared resources (e.g. variables, databases, device drivers).<br>
+    
+    
+    Integrity of the system may be violated if concurrent updates are not coordinated.<br>
+    • Lost updates<br>
+    • Inconsistent analysis<br>
+    <h4>Scalability</h4>
+    Adaption of distributed systems to • accommodate more users<br>
+    • respond faster (this is the hard one)<br>
+    Usually done by adding more and/or faster processors.<br>
+    Components should not need to be changed when increases scale of a system.<br>
+    Design components to be scalable!<br>
+    
+   <h4> Fault Tolerance</h4>
+    
+    Hardware, software and networks fail!<br>
+    
+    
+    Distributed systems must maintain availability even at low levels of hardware/software/network reliability.<br>
+    
+    
+    Fault tolerance is achieved by<br> • recovery<br>
+    • redundancy<br>
+    
+    <h4>Transparency</h4>
+    
+    Distributed systems should be perceived by users and application programmers as a whole rather than as a collection of cooperating components.
+    <br>
+    Transparency has different dimensions.<br>
+    These represent various properties that distributed systems should have.<br>
+    
+   <h4> Distribution Transparency</h4>
+    <img src="" alt="">
+    Access Transparency: Local and remote resources are accessed using identical operations.<br>
+    Location Transparency: Users are unaware of the location of resources Migration Transparency: Resources can migrate without name change Replication Transparency: Users are unaware of the existence of multiple copies of resources
+    <br>  Failure Transparency: Users are unaware of the failure of individual components Concurrency Transparency: Users are unaware of sharing resources with others Performance transparency: load variation should not lead to performance degradation. This could be achieved by automatic reconfiguration as response to changes of the load; it is difficult to achieve.
+    <br> Relocation Transparency: Hide that a resource may be moved to another location while in use (the others don’t notice).
+    <br> Persistence Transparency: Hide whether a (software) resource is in memory or on disk
+    
+    <h2>Selected application domins and associated networked applications</h2>
+   <img src="" alt="">
+     
+    An example financial trading system<br>
+    
+    
+    
+    Instructor’s Guide for Coulouris, Dollimore, Kindberg and Blair, Distributed Systems: Concepts and Design Edn. 5 © Pearson Education 2012
+    <br>
+    A typical portion of the Internet<br>
+    <img src="" alt="">
+    
+    
+    backbone<br>
+    
+    
+    satellite link<br>
+    
+    desktop computer: server:<br>
+    network link:<br>
+    
+    Instructor’s Guide for Coulouris, Dollimore, Kindberg and Blair, Distributed Systems: Concepts and Design Edn. 5 © Pearson Education 2012
+     
+<img src="" alt="">
+    <h2>Portable and handheld devices in a distributed system</h2>
+    
+    Instructor’s Guide for Coulouris, Dollimore, Kindberg and Blair, Distributed Systems: Concepts and Design Edn. 5 © Pearson Education 2012
+     <br>
+    <img src="" alt="">
+
+    <h2>Cloud computing</h2>
+    
+    
+    Instructor’s Guide for Coulouris, Dollimore, Kindberg and Blair, Distributed Systems: Concepts and Design Edn. 5 © Pearson Education 2012
+    <br>
+    
+    <h2>Growth of the Internet (computers and web servers)</h2>
+    Date<br>
+    
+    
+    1993, July 1995, July 1997, July 1999, July 2001, July 2003, July
+    
+    2005, July<br>
+     
+    Computers<br>
+    
+    1,776,000
+    
+    6,642,000 19,540,000 56,218,000 125,888,197
+    ~200,000,000<br>
+    
+    353,284,187<br>
+     
+    Web servers<br>
+    
+    130,
+    
+    23,500 1,203,096 6,598,697 31,299,592
+    42,298,371
+    
+    67,571,581<br>
+     
+    Percentage<br>
+    
+    0.008
+    
+    0.4 6 12 25
+    21
+    
+    19<br>
+    Instructor’s Guide for Coulouris, Dollimore, Kindberg and Blair, Distributed Systems: Concepts and Design Edn. 5 © Pearson Education 2012
+    <br>
+   <img src="" alt="">
+    <h2>Web servers and web browsers</h2>
+    
+   <h4> Web servers</h4>
+    
+    www.google.com<br>
+     
+    Browsers<br>
+    
+    http://www.google.comlsearch?q=obama<br>
+     
+    
+    
+    
+    
+    
+    www.cdk5.net   <br>                                      Internet<br>	http://www.cdk5.net/<br>
+    
+    
+    www.w3c.org<br>
+    
+    
+     
+    File system of www.w3c.org<br>
+     
+    standards<br>	http://www.w3.org/standards/faq.html#conformance<br>
+     
+    
+    
+    faq.html<br>
+    
+    
+    
+    
+    
+    Instructor’s Guide for Coulouris, Dollimore, Kindberg and Blair, Distributed Systems: Concepts and Design Edn. 5 © Pearson Education 2012<br>
+     
+   <h2> Examples of Distributed System</h2>
+    Web servers<br>
+    Intranet/ Network of workstations<br>
+    XT series of parallel computers by Cray<br><br>
+    Automatic banking (teller machine) system<br>
+    Automotive system (a distributed real-time system)<br>
+    New Cell processor (PlayStation 3)<br>
+    
+    
+    
+   <h2> Amoeba</h2>
+    
+    Web servers<br>
+    The collection of Web servers—or more precisely, servers implementing the HTTP protocol—that jointly provide the distributed database of hypertext and multimedia documents that is commonly known as the World-Wide Web
+    <br>
+    
+  <h2>  Intranet</h2>
+    The computers of a local network that provide a uniform view of a distributed file system and the collection of computers on the Internet that implement the Domain Name Service (DNS)
+    <br>
+    
+    <h2>XT series of parallel computers by Cray</h2>
+    
+    These are high-performance machines consisting of a collection of
+    
+    computing nodes that are linked by a high-speed low-latency network.
+    
+    The operating system, Cray Linux Environment (CLE) (also called
+    
+    UNICOS/lc), presents users with a standard Linux environment upon
+    
+    login, but transparently schedules login sessions over a number of
+    
+    available login nodes<br>
+    
+    <h2>Amoeba</h2>
+    
+    
+    
+    
+    Amoeba is a general-purpose distributed operating system.<br>
+    
+    
+    It is designed to take a collection of machines and make them act together as a single integrated system.<br>
+    
+    Amoeba provides the necessary mechanism for doing both distributed and parallel applications, but the policy is entirely determined by user-level programs.<br>
+    
+    
+    Amoeba is a distributed system, in which multiple machines can be connected together.<br>
+    
+    These machines need not all be of the same kind.<br>
+    
+    
+    The machines can be spread around a building on a LAN. Amoeba uses the high performance FLIP network protocol for LAN communication.<br>
+    
+    
+    If an Amoeba machine has more than one network interface it will automatically act as a FLIP (Fast Local Internet Protocol) router between the various networks and thus connect the various LANs together.
+    <br>
+    
+    Amoeba is intended for both ‘‘distributed’’ computing (multiple independent users working on different projects) and ‘‘parallel’’ computing (e.g., one user using 50 CPUs to play chess in parallel). Amoeba provides the necessary mechanism for doing both distributed and parallel applications.
+    <br>
+     
+    
+    
+    Amoeba was designed with what is currently termed a microkernel architecture.<br>
+    
+    
+    This means that every machine in an Amoeba system runs a small, identical piece of software called the kernel.<br>
+    
+    
+    The kernel supports the basic process, communication, and object primitives. It also handles raw device I/O and memory management.<br>
+    Everything else is built on top of these fundamentals, usually by user-space server processes.<br>
+    
+    
+    <h2>Machines on which Amoeba Runs</h2>
+    
+    Amoeba currently runs on the following architectures:<br>
+    •	Sun 4c and MicroSPARC SPARCstations<br>
+    
+    •	Intel 386/486/Pentium/Pentium Pro (IBM AT bus, PCI bus)<br>
+    
+    •	68030 VME-bus boards (Force CPU-30)<br><br>
+    
+    •	Sun 3/60 & Sun 3/50 workstations<br>
+    <h2>Weak Points In Amoeba</h2>
+    
+    • Over 1000 pages of documentation supplied<br>
+    
+    • Not binary compatible with UNIX<br>
+    
+    • No virtual memory (for performance reasons)<br>
+    
+    • Works poorly when there is insufficient memory<br>
+    
+    • No NFS support<br>
+    
+    • While fine for experimenting, it is not a totally polished
+    
+    production system<br>
+     
+   <h2> System Models</h2>
+    
+    Systems that are intended for use in real world environment should be designed to function correctly in the widest possible range of circumstances and in the face of many possible difficulties and threats.
+    <br>
+    
+    Earlier slides shows that DS of different types share important underlying properties and give rise to design problems.<br>
+    
+    
+    Here we are going to discuss common properties and design issues for distributed systems in the form of descriptive models.<br><br>
+    
+    
+    Each model is intended to provide an abstract, simplified but consistent description of a relevant aspect of distributed system design.
+    
+    • Architectural Model
+    <img src="" alt="">
+   <h2> • Fundamental Model</h2>
+    
+    Architectural Model defines the way in which the component of system interact with each another and the way they have been implemented in the network.<br>
+    
+    
+    These models are basically concern with the placement of system and its part and the relationship that exist between them. The goal of architecture model is to meet the current needs as well as the need of future
+    <br>• Software Architecture<br> • System Architecture<br>
+    
+    <h2>Software Architecture</h2>
+    
+    
+    It refers to the structuring of software as layers or modules in a single computer and in terms of services offered and requested between processes located in the same or different computers. These process and service oriented views can be expressed as service layers.
+    <br>
+    Application, services<br>
+    Middleware<br>
+    <h2>Operating System</h2>
+    
+        Computer and network hardware	<br>
+     
+    <h2>Platform</h2>
+    
+    The lowest level hardware and software layers are referred as platform to distributed system and their application.<br>
+    These low level layers provide services to the layers above them.<br>
+    Intel	x86/	Windows,	Intel	x86/Solarsis,	Intel	x86/Linux, PowerPC/Mac OS X are major example of hardware and software layers.<br>
+    
+    
+    
+    
+   <h2> Middleware</h2>
+    
+    •It is layer of software whose purpose is to mask heterogeneity and to
+    
+    provide a convenient programming model to application programmers.<br>
+    
+    •The goal of middleware is to create system independent interfaces for
+    
+    distributed applications.<br>
+    
+    •The principle aim of middleware, namely raising the level of
+    
+    abstraction for distributed programming, is achieved in three ways.<br>
+    
+    <h4>Middleware</h4>
+    (1) communication mechanisms that are more convenient and less error prone than basic message passing;<br>
+    (2) independence from OS, network protocol, programming language, etc. and<br>
+    (3) standard services (such as a naming service, transaction service, security service, etc.).<br>
+    
+    
+    To make the integration of these various services easier, and to improve transparency and system independence, middleware is usually based on a particular paradigm, or model, for describing distribution and communication.
+    <br>
+    RPC (Sun RPC) and group communication systems such as Isis were amongst the earliest instances of middleware. Object-oriented middleware products and standards are widely used, such as
+    <br>Java RMI (Remote Method Invocation)<br>
+    CORBA (Common Object Request Broker Architecture) Web services<br>
+    Microsoft DCOM (Distributed Component Object Model)<br>
+    
+    <h2>System Architecture</h2>
+    
+    A distributed system is composed of a number of elements, the most important of which are software components, processing nodes and networks.<br>
+    
+    Some of these elements can be specified as part of a distributed system’s design, while others are given.<br>
+    
+    Typically when building a distributed system, the software is under the designer’s control.<br>
+    
+    Depending on the scale of the system, the hardware can be specified within the design as well, or already exists and has to be taken as-is.<br>
+    
+    The key, however, is that the software components must be distributed over the hardware components in some way.
+    <br>
+    
+    The software of distributed systems can become fairly complex— especially in large distributed systems—and its components can spread over many machines.<br>
+    
+    It is important, therefore, to understand how to organize the system.<br>
+    
+    The software architecture of distributed systems deals with how software components are organized and how they work together, i.e., communicate with each other.<br>
+    
+    Typical software architectures include the layered, object-oriented, data-centered, and event-based architectures.<br>
+    
+    Once the software components are instantiated and placed on real machines, then the actual system architecture comes into picture.<br>
+
+     
+   <h2> Client Server Architecture</h2>
+    
+    The client-server architecture is the most common and widely used model for communication between processes.<br>
+    
+    In this architecture one process takes on the role of a server, while all other processes take on the roles of clients.<br>
+    
+    The server process provides a service (e.g., a time service, a database service, a banking service, etc.) and the clients are customers of that service.<br>
+    
+    A client sends a request to a server, the request is processed at the server and a reply is returned to the client.<br>
+    
+    A typical client-server application can be decomposed into three logical parts: the interface part, the application logic part, and the data part.<br>
+    <br>
+    Implementations of the client-server architecture vary with regards to how the parts are separated over the client and server roles.<br>
+    
+    A thin client implementation will provide a minimal user interface layer, and leave everything else to the server.<br>
+    
+    A fat client implementation, on the other hand, will include all of the user interface and application logic in the client, and only rely on the server to store and provide access to data.
+    <br>
+    Implementations in between will split up the interface or application logic parts over the clients and server in different ways.<br>
+    
+    
+   <h2> Vertical Distribution (Multi-Tier)</h2>
+   
+    An extension of the client-server architecture, the vertical distribution, or multi-tier, architecture distributes the traditional server functionality over multiple servers.
+    <br>
+    A client request is sent to the first server.<br>
+    
+    During processing of the request this server will request the services of the next server, who will do the same, until the final server is reached.<br>
+    
+    In this way the various servers become clients of each other. Each server is responsible for a different step (or tier) in the fulfillment of the original client request.
+    <br>
+    
+    <h2>Horizontal Distribution</h2>
+    
+    
+    
+    While vertical distribution focuses on splitting up a server’s functionality over multiple computers, horizontal distribution involves replicating a server’s functionality over multiple computers.
+    
+    A typical example, as shown in Figure, is a replicated Web server.<br>
+    
+    In this case each server machine contains a complete copy of all hosted Web pages and client requests are passed on to the servers in a round robin fashion.<br>
+    
+    The horizontal distribution architecture is generally used to improve scalability (by reducing the load on individual servers) and reliability (by providing redundancy).
+    <br>
+    <h2>Peer to Peer</h2>
+    
+    The peer to peer (P2P) architecture takes the opposite approach and assumes that all processes play the same role, and are therefore peers of each other.<br>
+    In this architecture, each process acts as both client and server, both sending out requests and processing incoming requests. The P2P model all processes provide the same logical services.
+    Well known examples of the P2P model are file-sharing applications. When a node wishes to send a message to an arbitrary other node, in this architecture it must first locate that node by propagating a request along the links in the overlay network. Once the destination node is found, the two nodes can typically communicate directly.
+    <br>
+    
+    There are two key types of overlay networks, the distinction being based on how they are built and maintained. In all cases a node in the network will maintain a list of neighbors.
+    <br>
+    In unstructured overlays the structure of the network often resembles a random graph.

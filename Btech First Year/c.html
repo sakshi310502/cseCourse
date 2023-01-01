@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>C-Language</h1>
+    <h2> OVERVIEW OF C</h2>
+<p>
+• C is developed by Dennis Ritchie in 1972<br>
+• C is a structured programming language<br>
+• C supports functions that enables easy<br>
+maintainability of code, by breaking large
+file into smaller modules
+• Comments in C provides easy readability<br>
+• C is a powerful language</p>
+
+<h2>PROGRAM STRUCTURE</h2>
+
+<h3>A sample C Program</h3>
+
+#include<stdio.h><br>
+void main()<br>
+{<br>
+--statements<br>
+// Comments after double slash<br>
+}<br>
+
+EXAMPLE<br>
+
+<h2>HEADER FILES</h2>
+
+• The files that are specified in the include<br>
+section is called as header file<br>
+• These are precompiled files that has some<br>
+functions defined in them<br>
+• We can call those functions in our<br>
+program by supplying parameters<br>
+• Header file is given an extension .h<br>
+• C Source file is given an extension .c<br>
+
+<h2>MAIN FUNCTION</h2>
+
+• This is the entry point of a program<br>
+• When a file is executed, the start point is
+the main function<br>
+• From main function the flow goes as per
+the programmers choice.<br>
+• There may or may not be other functions
+written by user in a program<br>
+• Main function is compulsory for any c
+program<br>
+
+<h3>WRITING THE FIRST PROGRAM</h3>
+
+#include<stdio.h><br>
+int main()<br>
+{<br>
+printf(“Hello”);<br>
+return 0;<br>
+}<br>
+
+• This program prints Hello on the screen when
+we execute it<br>
+
+<h2>RUNNING A C-PROGRAM</h2>
+
+
+• Type a program<br>
+• Save it<br>
+• Compile the program – This will generate an exe
+file (executable)<br>
+• Run the program (Actually the exe created out of
+compilation will run and not the .c file)<br>
+• In different compiler we have different option for
+compiling and running. We give only the
+concepts.<br>
+
+<h3>COMMENTS IN C</h3>
+<br>
+• Single line comment<br>
+– // (double slash)<br>
+– Termination of comment is by pressing enter
+key<br>
+
+• Multi line comment<br>
+/*....
+.......*/<br>
+This can span over to multiple lines<br>
+
+<h2>DATA TYPES IN C</h2>
+
+
+• Primitive data types<br>
+– int, float, double, char<br>
+• Aggregate data types<br>
+– Arrays come under this category<br>
+– Arrays can contain collection of int or float or
+char or double data<br>
+
+• User defined data types<br>
+– Structures and enum fall under this category.<br>
+
+<h2>VARIABLES</h2>
+
+
+• Variables are data that will keep on changing<br>
+• Declaration<br>
+<<Data type>> <<variable name>>;<br>
+int a;<br>
+• Definition
+<<varname>>=<<value>>;<br>
+a=10;<br>
+• Usage<br>
+<<varname>><br>
+a=a+1; //increments the value of a by 1<br>
+
+<h2>VARIABLE NAMES- RULES</h2>
+
+
+• Should not be a reserved word like int etc..<br>
+• Should start with a letter or an
+underscore(_)<br>
+• Can contain letters, numbers or
+underscore.<br>
+• No other special characters are allowed
+including space<br>
+• Variable names are case sensitive
+– A and a are different.<br>
+
+<h3>INPUT AND OUTPUT</h3>
+
+• Input<br>
+– scanf(“%d”,&a);<br>
+– Gets an integer value from the user and
+stores it under the name “a”<br>
+
+• Output
+– printf(“%d”,a);<br>
+– Prints the value present in variable a on the
+screen<br>
+
+<h3>FOR LOOPS</h3>
+
+
+• The syntax of for loop is<br>
+for(initialisation;condition checking;increment)<br>
+{<br>
+set of statements<br>
+}<br>
+Eg: Program to print Hello 10 times<br>
+for(I=0;I<10;I++)<br>
+{<br>
+printf(“Hello”);<br>
+}<br>
+
+<h3>WHILE LOOP</h3>
+
+
+• The syntax for while loop<br>
+while(condn)<br><br>
+{<br
+statements;<br>
+}<br>
+
+Output: <br>
+
+Eg:<br>
+a=10;<br>
+while(a != 0)<br>
+{<br
+printf(“%d”,a);<br>
+a--;<br>
+}
+<br>
+DO WHILE LOOP<br>
+
+• The syntax of do while loop<br>
+do<br>
+{<br>
+set of statements<br>
+}while(condn);<br>
+
+Output:<br>
+10987654321<br>
+
+Eg:<br>
+i=10;<br>
+i=10;<br>
+do<br>
+{<br>
+printf(“%d”
+,i);<br>
+
+i--;<br>
+}while(i!=0)<br>
+
+<h2>CONDITIONAL STATEMENTS</h2>
+
+
+ if (condition)<br>
+ {<br>
+ stmt 1; //Executes if Condition is true<br>
+
+//Executes if condition is false<br>
+
+}<br>
+else<br>
+{<br>
+stmt 2;<br>
+}
+<br>
+<h2>CONDITIONAL STATEMENT</h2>
+
+
+switch(var)<br>
+{<br>
+case 1:<br>
+
+case 2:<br>
+
+default:<br>
+
+//if var=1 this case executes<br>
+stmt;<br>
+break;<br>
+//if var=2 this case <br>
+stmt;<br>
+break;<br>
+//if var is something else this will execute<br>
+stmt;<br>
+
+}
+
+<h2>OPERATORS</h2>
+
+
+• Arithmetic (+,-,*,/,%)<br>
+• Relational (<,>,<=,>=,==,!=)<br>
+• Logical (&&,||,!)<br>
+• Bitwise (&,|)<br>
+• Assignment (=)<br>
+• Compound assignment(+=,*=,-=,/=,
+%=,&=,|=)<br>
+• Shift (right shift >>, left shift <<)<br>
+<br>
+<h2>STRING FUNCTIONS</h2>
+
+
+• strlen(str) – To find length of string str<br>
+• strrev(str) – Reverses the string str as rts<br>
+• strcat(str1,str2) – Appends str2 to str1 and<br>
+returns str1<br>
+• strcpy(st1,st2) – copies the content of st2 to st1<br>
+• strcmp(s1,s2) – Compares the two string s1 and<br>
+s2<br>
+• strcmpi(s1,s2) – Case insensitive comparison of<br><br>
+strings<br>
+
+<h2>NUMERIC FUNCTIONS</h2>
+
+• pow(n,x) – evaluates n^x<br>
+• ceil(1.3) – Returns 2<br>
+• floor(1.3) – Returns 1<br>
+• abs(num) – Returns absolute value<br>
+• log(x) - Logarithmic value<br>
+• sin(x)<br>
+• cos(x)<br>
+• tan(x)
+
+<h2>PROCEDURES</h2>
+
+• Procedure is a function whose return type
+is void<br>
+
+• Functions will have return types int, char,
+double, float or even structs and arrays<br>
+
+• Return type is the data type of the value
+that is returned to the calling point after
+the called function execution completes<br>
+
+<h2>FUNCTIONS AND PARAMETERS</h2>
+
+•Syntax of function<br>
+Declaration section<br>
+<<Returntype>> funname(parameter list);<br>
+Definition section<br>
+<<Returntype>> funname(parameter list)<br>
+{<br>
+body of the function<br>
+}<br>
+Function Call<br>
+Funname(parameter);<br>
+
+EXAMPLE FUNCTION<br>
+
+void fun(int a);<br>
+
+int main()<br>
+{<br>
+fun(10);<br>
+}<br>
+void fun(int x)<br>
+{<br>
+printf(“%d”,x);<br>
+}<br>
+#include<stdio.h><br>
+
+//declaration<br>
+
+//Call<br>
+
+//definition<br>
+
+ACTUAL AND FORMAL PARAMETERS<br>
+
+• Actual parameters are those that are used
+during a function call<br>
+
+• Formal parameters are those that are
+used in function definition and function
+declaration<br>
+
+<h2>ARRAYS</h2>
+
+• Arrays fall under aggregate data type<br>
+• Aggregate – More than 1<br>
+• Arrays are collection of data that belong to
+same data type<br>
+• Arrays are collection of homogeneous
+data<br>
+• Array elements can be accessed by its
+position in the array called as index<br>
+
+<h2>ARRAYS</h2>
+
+• Array index starts with zero<br>
+• The last index in an array is num – 1 where num
+is the no of elements in a array<br>
+• int a[5] is an array that stores 5 integers<br>
+• a[0] is the first element where as a[4] is the fifth
+element<br>
+• We can also have arrays with more than one
+dimension<br>
+• float a[5][5] is a two dimensional array. It can
+store 5x5 = 25 floating point numbers<br>
+• The bounds are a[0][0] to a[4][4]<br>
+
+<h2>STRUCTURES</h2>
+
+• Structures are user defined data types<br>
+• It is a collection of heterogeneous data<br>
+• It can have integer, float, double or character
+data in it<br>
+•We can also have array of structures<br>
+struct <<structname>><br>
+{<br>
+members;<br><br>
+}element;<br>
+We can access element.members;<br>
+
+<h2>STRUCTURES</h2>
+
+struct Person<br>
+{<br>
+int id;<br>
+char name[5];<br>
+}P1;<br><br>
+P1.id = 1;<br>
+P1.name = “vasu”;<br>
+
+<h2>TYPE DEF</h2>
+
+
+• The typedef operator is used for creating
+alias of a data type<br>
+• For example I have this statement
+typedef int integer;<br>
+Now I can use integer in place of int<br>
+i.e instead of declaring int a;, I can use
+integer a;<br>
+This is applied for structures too.<br>
+
+<h2>POINTERS</h2>
+
+• Pointer is a special variable that stores
+address of another variable<br>
+• Addresses are integers. Hence pointer
+stores integer data<br>
+• Size of pointer = size of int<br>
+• Pointer that stores address of integer<br>
+variable is called as integer pointer and is
+declared as int *ip;<br>
+
+<h3>POINTERS</h3>
+
+
+• Pointers that store address of a double,<br>
+char and float are called as double<br>
+pointer, character pointer and float pointer
+respectively.<br>
+• char *cp<br>
+• float *fp<br
+• double *dp;<br>
+• Assigning value to a pointer<br>
+int *ip = &a; //a is an int already declared<br>
+
+<h3>EXAMPLES</h3>
+
+//a stores 10<br>
+
+int a;<br>
+a=10;<br><br>
+int *ip;<br>
+ip = &a; //ip stores address of a (say 1000)<br>
+
+ip : fetches 1000<br>
+*ip : fetches 10<br>
+* Is called as dereferencing operator<br>
+
+<h2>CALL BY VALUE</h2>
+
+• Calling a function with parameters passed as<br>
+values<br>
+
+int a=10;<br>
+fun(a);<br>
+
+
+void fun(int a)<br>
+{
+    <br>
+defn;<br>
+
+}<br>
+
+Here fun(a) is a call by value.<br>
+Any modification done with in the function is local<br>
+to it and will not be effected outside the function<br>
+
+<h2>CALL BY REFERENCE</h2>
+
+• Calling a function by passing pointers as
+parameters (address of variables is passed
+instead of variables)<br>
+
+int a=1;<br>
+fun(&a);<br>
+
+void fun(int *x)<br>
+{<br>
+    <br>
+defn;<br>
+
+}<br>
+
+Any modification done to variable a will effect<br><br>
+outside the function also<br>
+
+EXAMPLE PROGRAM – CALL<br>
+BY VALUE<br>
+
+a=10<br>
+
+a=10<br>
+
+x=10<br><br>
+
+x=11<br>
+
+#include<stdio.h><br>
+void main()<br>
+{<br>
+int a=10;<br>
+printf(“%d”,a);<br>
+fun(a);<br>
+printf(“%d”,a);<br>
+}<br>
+void fun(int x)<br>
+{<br>
+printf(“%d”,x)<br>
+x++;<br><br>
+printf(“%d”,x);<br>
+}<br>
+
+<h2>EXPLANATION</h2>
+
+EXAMPLE PROGRAM – CALL BY
+
+REFERENCE<br>
+
+
+#include<stdio.h><br>
+void main()
+{<br>
+int a=10;<br>
+printf(“%d”,a); a=10<br>
+fun(a);<br>
+printf(“%d”,a); a=11<br>
+
+x=10<br>
+
+x=11<br>
+
+}<br>
+void fun(int x)<br>
+{<br>
+printf(“%d”,x)<br>
+x++;<br>
+printf(“%d”,x);<br>
+}<br>
+
+<h3>EXPLANATION</h3>
+
+
+a and x are referring to same location. <br>
+value will be over written.<br><br>
+
+<h2>CONCLUSION</h2>
+
+• Call by value => copying value of variable
+in another variable. So any change made
+in the copy will not affect the original
+location.<br>
+• Call by reference => Creating link for the
+parameter to the original location. Since
+the address is same, changes to the
+parameter will refer to original location and the value will be over written.<br>
+    
+</body>
+</html>
